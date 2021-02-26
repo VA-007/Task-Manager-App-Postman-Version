@@ -25,9 +25,9 @@ router.post('/tasks', auth, async (req, res) => {          // Resource creation 
   // });
 });
 
-// Filtering Data --> GET /tasks?completed=true/false
-// Paginating Data --> GET /tasks?limit=2&page=1
-// Sorting Data --> GET /tasks?sortBy=createdAt:asc/desc
+// --> Filtering Data --> GET /tasks?completed=true/false
+// --> Paginating Data --> GET /tasks?limit=2&page=1
+// --> Sorting Data --> GET /tasks?sortBy=createdAt:asc/desc
 router.get('/tasks', auth, async (req, res) => {          // Resource reading endpoint for tasks for a user
   // <-- Method 1 (Lengthy) -->
   const match = {};
